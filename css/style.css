@@ -229,6 +229,16 @@ main h3 .icon { color: var(--mid); }
   margin: 2rem 0 2.5rem;
 }
 
+.stat-strip--3up {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 560px) {
+  .stat-strip--3up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .stat {
   background: linear-gradient(135deg, var(--bright), var(--mid));
   color: white;
@@ -330,6 +340,16 @@ main h3 .icon { color: var(--mid); }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
+}
+
+.topic-grid--2up {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 560px) {
+  .topic-grid--2up {
+    grid-template-columns: 1fr;
+  }
 }
 
 .topic {
